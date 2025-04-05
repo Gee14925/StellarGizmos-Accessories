@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StellarGizmos Product Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebf3ff;
+            color: #1f3a4f;
+        }
+        header {
+            background-color: #4ca1e6;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header img {
+            height: 200px;
+            margin-bottom: 1px;
+        }
+        .product-section {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+            color: #1f3a4f;
+        }
+        .divider {
+            width: 80%;
+            margin: 20px auto;
+            border-top: 2px solid #ccc;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            justify-items: center;
+        }
+        .product-container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .single-product-container {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .product-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .buy-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            background-color: #3f739e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <div class="divider"></div>
+        <h1>StellarGizmos</h1>
+    <div class="divider"></div>
+        <img src="images/logo.jpg" alt="StellarGizmos Logo" style="height: 200px; margin-bottom: 1px;">
+    </header>
+
+    <div class="divider"></div>
+    <h2 class="product-section">Computer Accessories</h2>
+    <div class="divider"></div>
+
+    <div class="product-grid">
+        <div class="product-container">
+            <img src="images/keyboard.jpg" alt="Keyboard" class="product-image">
+            <h2>Keyboard</h2>
+            <p>High-quality mechanical and membrane keyboards for gaming and work.</p>
+            <p class="price">$49.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product-container">
+            <img src="images/mouse.jpg" alt="Mouse" class="product-image">
+            <h2>Mouse</h2>
+            <p>Ergonomic and high-precision mice for productivity and gaming.</p>
+            <p class="price">$29.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product-container">
+            <img src="images/monitor.jpg" alt="Monitor" class="product-image">
+            <h2>Monitor</h2>
+            <p>Full HD and 4K monitors with vibrant colors and high refresh rates.</p>
+            <p class="price">$199.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product-container">
+            <img src="images/speaker.jpg" alt="Speaker" class="product-image">
+            <h2>Speaker</h2>
+            <p>High-quality speakers with deep bass and crystal-clear sound.</p>
+            <p class="price">$79.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="product-grid">
+        <div class="product-container">
+            <img src="images/anime_phone_chain.jpg" alt="Anime Styled Phone Chains" class="product-image">
+            <h2>Anime Styled Phone Chains</h2>
+            <p>Show off your favorite anime characters with these stylish phone chains.</p>
+            <p class="price">$14.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+        <div class="product-container">
+            <img src="images/phone_charger.jpg" alt="Phone Chargers" class="product-image">
+            <h2>Phone Chargers</h2>
+            <p>Fast-charging and durable phone chargers to keep your devices powered up.</p>
+            <p class="price">$19.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="single-product-container">
+        <div class="product-container">
+            <img src="images/anime_phone_case.jpg" alt="Anime Styled Phone Cases" class="product-image">
+            <h2>Anime Styled Phone Cases</h2>
+            <p>Protect your phone with stylish anime-inspired cases featuring your favorite characters.</p>
+            <p class="price">$24.99</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <p>© 2025 StellarGizmos. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
