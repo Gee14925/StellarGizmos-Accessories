@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles1.css">
+
+	<title>Sign In Page</title>
+
+	<style>
+        body {
+            background-color: aliceblue;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            background: white;
+            padding: 10px;
+			width: 400px;
+			text-align: center;
+			border-radius: 10px;
+			flex-direction: column;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        form button {
+            display: inline-block;
+					margin-top: 15px;
+					padding: 10px 20px;
+					background-color: #e74c3e;
+					color: #fff;
+					border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #c0392b;
+            transform: translateY(-10px);
+            transition: background-color 0.3s ease;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<img src="images/StellarGizmo-_Logo_-[background].jpg" alt="StellarGizmos- Accessories" width="250" height="150">
+	</header>
+	<div class="container">
+		<h2>Sign In</h2>
+		<form action="submitForm()" method="post" id="sign-in-form">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" required>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+            <br>
+            <br>
+			<button type="submit">Sign In</button>
+		</form>
+	</div>
+
+    <script>
+	function submitForm(event) {
+        event.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        if (email == "" || password == "") {
+
+            alert("Please fill out both feild");
+            return;
+        }
+
+        alert("Sign-in successful!");
+
+        window.location.href = "home-page.html";
+}
+</script>
+</body>
+</html>

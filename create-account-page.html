@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<link rel="stylesheet" href="styles1.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    
+    <section id="createacc">
+    <title>StellarGizmos|Create Account</title>
+
+    <style>
+        header {
+            background-color: #ebf3ff;
+            text-align: left;
+        }
+
+        form {
+            padding: 5px 5px; 
+            border: 1px solid #145681;
+            border-radius: 5px;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+            transform: translateY(-10px);
+            background-color: #c0392b;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        button {
+            transform: scale(1.0);
+        }
+
+        body {
+            
+            background-color: #fff;
+            text-align: center;
+        }
+
+        footer {
+    clear: both;
+    background-color: #ebf3ff;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-top: 2px solid black;
+    margin: 200;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+        <img src="images/StellarGizmo-_Logo_-[background] (1).jpg" alt="StellarGizmos- Accessories" width="300" height="250">
+		<p style="color: black; text-align: left;">Technology. Innovation. Creative.</p>
+	</header>
+    <br>
+	<h2>Create Account</h2>
+
+        <form>
+            <label for="contact">Name:</label>
+
+            <input
+            type="text"
+            id="fname"
+            name="fullname"
+            placeholder="Enter First and Last name"
+            >
+            <br> <br>
+            <button type="submit" id="submit">Submit</button>
+
+            <br> <br>
+            <label for="contact">Email or Mobile Phone Number:</label>
+
+            <input 
+            type="text" 
+            id="contact" 
+            name="contact" 
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$|[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+            placeholder="Enter Email/Phone Number" required>
+                <br> <br> 
+                <button type="submit" id="submit">Submit</button>
+                
+                <br> <br> 
+                <label for="contact">Email Password:</label>
+                <input 
+                type="text"
+                id="password"
+                name="password"
+                pattern=".{8,}">
+
+                <br> <br> 
+                <button type="submit" id="submit">Submit</button>
+                <div>
+                    <a href="/reset-password" style="font-size: 15px;" class="text-blue-500 hover:underline">Forgot password?</a>
+                </div>
+                <br> <br> 
+            <p style="font-size: 11px;">By continuing, you agree to StellarGizmo's <a href="condition.html">Conditions of Use</a> and <a href="privacy_notice.html">Privacy Notice</a></p>
+        </form>
+        <br> 
+	<footer>
+
+            <br> <br>
+		<a href="condition.html">Conditions of Use</a>
+		<a href="privacy_notice.html">Privacy Notice</a>
+		<a href="help.html">Help</a>
+		<p>&copy; 2025 StellarGizmos. All Rights Reserved.</p>
+	</footer>
+</body>
+</section>
+</html>

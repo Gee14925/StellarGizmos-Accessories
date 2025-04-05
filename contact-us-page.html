@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<link rel="stylesheet" href="styles1.css">
+<head>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Us</title>
+	<style>
+		body {
+			background-color: #f4f4f4;
+		}
+
+		.contact-us {
+			background: white;
+			padding: 10px;
+			width: 400px;
+			text-align: center;
+			border-radius: 10px;
+			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+		}
+
+        .social-media {
+            background: white;
+            padding: 10px;
+			width: 400px;
+			text-align: center;
+			border-radius: 10px;
+			box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .social-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .shop-item {
+            display: flex;
+            background-color: white;
+            box-shadow: inset 5px 5px 10px rgb(0, 0, 0, 0.2),
+            inset -5px -5px 10px rgb(0, 0, 0, 0.2);
+            padding: 15px;
+            width: 96.5vw;
+        }
+
+        header img {
+            align-items: right;
+        }
+
+        .shop-item .text-content {
+            display: flex;
+            flex-direction: column;
+        }
+	</style>
+</head>
+<body>
+
+    <header> 
+        <img src="images/StellarGizmo-_Logo_-[background].jpg" alt="StellarGizmos- Accessories" width="150" height="100">
+    </header>
+
+    <div class="shop-item">
+        <div class="text-content">
+        <h2>Contact Us</h2>
+        <p>Real-time responses for our customers.</p>
+        </div>
+        <img src="images/Shopping cart and shopping bags.jpeg" alt="Shopping Picture" width="200" lentgh="200">
+    </div>
+
+    <div class="container">
+    <!--Contact Info-->
+        <section class="contact-us">
+		    <div>
+                <div>
+			        <h2>Official Contact Info</h2>
+			        <p>266 3210 Bridgeston St, Jamaica, Kinston</p>
+                </div>
+                <div>
+                    <h2>Phone Number</h2>
+                    <p>(876) 938-9387</p>
+                </div>
+            </div>
+        </section>
+
+    <!--Social Media-->
+        <section class="social-media">
+            <div>
+                <h3>We are also available on social media</h3>
+
+                <div class="social-grid">
+                <!-- FIXING CODE- "putting the social media handles in rows and columns."-->
+                    <div class="social-item">
+                        <h5>StellarGizmos Official</h5> 
+                        <img src="images/Facebook photo.jpeg" alt="Facebook" width="30" height="30">
+                        <link>@shopGizmos</link>
+                    </div>
+
+                    <div class="social-item">
+                        <h5>StellarGizmos</h5>
+                        <img src="images/instgram photo.jpeg" alt="instgram" width="55" height="55">
+                        <link>@StellarGizmos</link>
+                    </div>
+
+                    <div class="social-item">
+                        <h5>stellargizmos</h5>
+                        <img src="images/Pintrest photo.jpeg" alt="Pintrest" width="40" height="40">
+                        <link>@shopGizmos</link>
+                    </div>
+
+                    <div class="social-item">
+                        <h5>StellarGizmos</h5>
+                        <img src="images/Twitter logo X photo.jpeg" alt="Twitter" width="45" height="45">
+                        <link>@shopgizmos</link>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StellarGizmos. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
