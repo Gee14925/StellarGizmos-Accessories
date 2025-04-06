@@ -1,0 +1,9 @@
+
+body {
+    background-color: #f0f8ff;  /* Light blue background */
+    font-size: 18px;            /* Base font size */
+    color: #2b4d69;             /* Main font color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
