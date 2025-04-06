@@ -76,31 +76,47 @@
     <br>
 	<h2>Create Account</h2>
 
-        <form id="account-form">
+	<form>
             <label for="contact">Name:</label>
 
             <input
             type="text"
             id="fname"
             name="fullname"
-            placeholder="Enter First and Last name" required>
-           <br>
-           <br>
+            placeholder="Enter First and Last name"
+            pattern="[A-Za-z\s]+"
+            title="Only letters and spaces allowed"
+            required>
+           <br><br>
+
             <label for="contact">Bank ID No.:</label>
 
             <input 
             type="text" 
             id="contact" 
             name="contact" 
-            placeholder="Bank ID#" required>
-                
-                <br> <br> 
+            pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+            title="Only nubers and space allowed"
+            placeholder="Bank ID#" 
+            required>
+            <br> <br> 
+
+            <label for="country">Country/Region:</label>
+
+            <input 
+            type="text" 
+            id="country" 
+            name="country" 
+            pattern="[A-Za-z\s]+"
+            title="Only letters and space allowed"
+            placeholder="Bank ID#" 
+            required>
+
                 <label for="contact">Address:</label>
                 <input 
                 type="text"
-                id="address"
-                name="address"
-		placeholder="Enter address" required>
+                id="Address"
+                name="Address"
 
                 <br> <br> 
                 <button type="submit" id="submit">Submit</button>
