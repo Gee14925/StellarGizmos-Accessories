@@ -15,6 +15,12 @@
             margin: 20px 0;
             text-align: center;
         }
+        header {
+    background-color: #4ca1e6;
+    text-align: center;
+
+ }
+
         .product-image {
             width: 200px;
             height: 200px;
@@ -58,11 +64,18 @@
     </div>
 </header>
 
+<div>
+    <nav>
+        <a href="Home page.html">Home</a>
+        <a href="Productpage.html" class="active">Contact Us</a>
+    </nav>
+</div>
+
 <div class="container my-4">
     <h2 class="product-section">Computer Accessories</h2>
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div id="keyboard">
                 <img src="images/keyboard.jpg" alt="Keyboard" class="product-image mx-auto">
                 <h2>Keyboard</h2>
                 <p>High-quality mechanical and membrane keyboards for gaming and work.</p>
@@ -71,7 +84,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div id="Mouse">
                 <img src="images/mouse.jpg" alt="Mouse" class="product-image mx-auto">
                 <h2>Mouse</h2>
                 <p>Ergonomic and high-precision mice for productivity and gaming.</p>
@@ -80,7 +93,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div class="monitor">
                 <img src="images/monitor.jpg" alt="Monitor" class="product-image mx-auto">
                 <h2>Monitor</h2>
                 <p>Full HD and 4K monitors with vibrant colors and high refresh rates.</p>
@@ -89,7 +102,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div class="speaker">
                 <img src="images/speaker.jpg" alt="Speaker" class="product-image mx-auto">
                 <h2>Speaker</h2>
                 <p>High-quality speakers with deep bass and crystal-clear sound.</p>
@@ -98,7 +111,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div id="anime_phone_chain">
                 <img src="images/anime_phone_chain.jpg" alt="Anime Styled Phone Chains" class="product-image mx-auto">
                 <h2>Anime Styled Phone Chains</h2>
                 <p>Show off your favorite anime characters with these stylish phone chains.</p>
@@ -107,7 +120,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="card h-100 text-center p-3">
+            <div id="phone_charger">
                 <img src="images/phone_charger.jpg" alt="Phone Chargers" class="product-image mx-auto">
                 <h2>Phone Chargers</h2>
                 <p>Fast-charging and durable phone chargers to keep your devices powered up.</p>
@@ -118,7 +131,7 @@
     </div>
 
     <div class="text-center mt-4">
-        <div class="card d-inline-block p-3">
+        <div id="anime_phone_case">
             <img src="images/anime_phone_case.jpg" alt="Anime Styled Phone Cases" class="product-image mx-auto">
             <h2>Anime Styled Phone Cases</h2>
             <p>Protect your phone with stylish anime-inspired cases featuring your favorite characters.</p>
@@ -198,6 +211,7 @@
             }
         }
     }
+
 </script>
 </body>
 </html>
