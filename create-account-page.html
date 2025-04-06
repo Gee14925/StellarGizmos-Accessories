@@ -64,9 +64,15 @@
 </head>
 <body>
 	<header>
-        <img src="images/StellarGizmo-_Logo_-[background] (1).jpg" alt="StellarGizmos- Accessories" width="300" height="250">
+        <img src="StellarGizmo-_Logo_-[background] (1).jpg" alt="StellarGizmos- Accessories" width="300" height="250">
 		<p style="color: black; text-align: left;">Technology. Innovation. Creative.</p>
 	</header>
+    <div>
+        <nav>
+            <a href="Home page.html">Home</a>
+            <a href="create-account-page.html" class="active">Contact Us</a>
+        </nav>
+    </div>
     <br>
 	<h2>Create Account</h2>
 
@@ -77,30 +83,24 @@
             type="text"
             id="fname"
             name="fullname"
-            placeholder="Enter First and Last name"
-            >
-            <br> <br>
-            <button type="submit" id="submit">Submit</button>
-
-            <br> <br>
-            <label for="contact">Email or Mobile Phone Number:</label>
+            placeholder="Enter First and Last name">
+           <br>
+           <br>
+            <label for="contact">Bank ID No.:</label>
 
             <input 
             type="text" 
             id="contact" 
             name="contact" 
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$|[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
-            placeholder="Enter Email/Phone Number" required>
-                <br> <br> 
-                <button type="submit" id="submit">Submit</button>
+            pattern=".[a-z]{2,}$|[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+            placeholder="Bank ID#" required>
                 
                 <br> <br> 
-                <label for="contact">Email Password:</label>
+                <label for="contact">Address:</label>
                 <input 
                 type="text"
                 id="password"
                 name="password"
-                pattern=".{8,}">
 
                 <br> <br> 
                 <button type="submit" id="submit">Submit</button>
