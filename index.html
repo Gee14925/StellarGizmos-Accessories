@@ -9,9 +9,12 @@
 	<title>Sign In Page</title>
 
 	<style>
-        body {
+        body, html {
             background-color: aliceblue;
-            align-items: center;
+            height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
         }
 
         form {
@@ -40,6 +43,23 @@
             transition: background-color 0.3s ease;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
+
+		.container {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		footer {
+			clear: both;
+    		background-color: #3f739e;
+    		text-align: center;
+    		padding: 20px;
+    		color: white;
+			margin-top: auto;
+		}
 	</style>
 </head>
 <body>
@@ -48,7 +68,7 @@
 	</header>
 	<div class="container">
 		<h2>Sign In</h2>
-		<form action="submitForm()" method="post" id="sign-in-form">
+		<form action="submitForm(event)" method="post" id="sign-in-form">
 			<label for="username">Username:</label>
 			<input type="text" id="username" name="username" required>
 			<br>
@@ -72,7 +92,7 @@
 
         if (email == "" || password == "") {
 
-            alert("Please fill out both feild");
+            alert("Please fill out both field");
             return;
         }
 
@@ -81,5 +101,9 @@
         window.location.href = "Home page.html";
 }
 </script>
+
+<footer>
+	<p>&copy; 2025 StellarGizmos. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
