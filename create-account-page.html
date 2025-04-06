@@ -120,5 +120,16 @@
 		<p>&copy; 2025 StellarGizmos. All Rights Reserved.</p>
 	</footer>
 </body>
+
+	<script>
+        document.getElementById("account-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("success-message").style.display = "block";
+
+            document.getElementById("accont-form").style.display = "none";
+        });
+    </script>
+
 </section>
 </html>
