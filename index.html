@@ -71,10 +71,17 @@
 		<h3>Welcome to StellarGizmos!</h3>
 		<form action="submitForm(event)" method="post" id="sign-in-form">
 			<label for="username">Username:</label>
-			<input type="text" id="username" name="username" required>
+			<input type="text" 
+				id="username" 
+				name="username" 
+				required>
 			<br>
 			<label for="email">Email:</label>
-			<input type="text" id="email" name="email" required>
+			<input type="text" 
+				id="email"
+				pattern="[a-z0-9._%+-]+@[a-z0-9._%+-]+\.[a-z]{2,}$"
+				name="email" 
+				required>
 			<br>
 			<label for="password">Password:</label>
 			<input type="password" id="password" name="password" required>
